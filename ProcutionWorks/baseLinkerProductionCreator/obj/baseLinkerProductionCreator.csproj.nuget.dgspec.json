@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\baseLinkerProductionCreator.csproj": {}
+    "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\BaseLinkerProductionCreator.csproj": {}
   },
   "projects": {
-    "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\baseLinkerProductionCreator.csproj": {
+    "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\BaseLinkerProductionCreator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\baseLinkerProductionCreator.csproj",
-        "projectName": "baseLinkerProductionCreator",
-        "projectPath": "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\baseLinkerProductionCreator.csproj",
+        "projectUniqueName": "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\BaseLinkerProductionCreator.csproj",
+        "projectName": "BaseLinkerProductionCreator",
+        "projectPath": "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\BaseLinkerProductionCreator.csproj",
         "packagesPath": "C:\\Users\\48505\\.nuget\\packages\\",
         "outputPath": "C:\\LocalRepository\\ProcutionWorks\\ProcutionWorks\\baseLinkerProductionCreator\\obj\\",
         "projectStyle": "PackageReference",
@@ -37,6 +37,34 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
