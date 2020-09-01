@@ -1,9 +1,0 @@
-{
-  "buildOptions": {
-    "emitEntryPoint": true,
-    "preserveCompilationContext": true,
-    "copyToOutput": {
-      "include": [ "appsettings.json" ]
-    }
-  }
-}

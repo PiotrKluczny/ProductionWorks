@@ -58,3 +58,4 @@ C:\LocalRepository\ProcutionWorks\ProcutionWorks\baseLinkerProductionCreator\bin
 C:\LocalRepository\ProcutionWorks\ProcutionWorks\baseLinkerProductionCreator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 C:\LocalRepository\ProcutionWorks\ProcutionWorks\baseLinkerProductionCreator\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\LocalRepository\ProcutionWorks\ProcutionWorks\baseLinkerProductionCreator\obj\Debug\netcoreapp3.1\BaseLinkerProductionCreator.csproj.CoreCompileInputs.cache
+C:\LocalRepository\ProcutionWorks\ProcutionWorks\baseLinkerProductionCreator\bin\Debug\netcoreapp3.1\appsettings.json

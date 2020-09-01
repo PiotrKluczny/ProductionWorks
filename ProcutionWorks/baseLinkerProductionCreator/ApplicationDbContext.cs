@@ -1,17 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BaseLinkerProductionCreator
 {
-    class AplicationDbContext : DbContext
+    class ApplicationDbContext : DbContext
     {
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Image> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<Product>().HasKey(m => m.Id);
+            builder.Entity<Image>().HasKey(m => m.Id);
             base.OnModelCreating(builder);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

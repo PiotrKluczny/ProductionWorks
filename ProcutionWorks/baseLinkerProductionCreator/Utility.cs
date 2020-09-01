@@ -13,9 +13,7 @@ namespace BaseLinkerProductionCreator
                 .AddJsonFile("appsettings.json");
             var configuration = builder.Build();
             var configValue = configuration[key];
-
             return configValue;
-
 
         }
     }

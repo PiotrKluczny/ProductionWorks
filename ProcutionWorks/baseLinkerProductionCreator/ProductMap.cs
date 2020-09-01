@@ -5,13 +5,29 @@ using System.Text;
 
 namespace BaseLinkerProductionCreator
 {
-    class ProductMap : ClassMap<Product>
+    class ProductMap : ClassMap<ImageCSV>
     {
         public ProductMap()
-        {
-            Map(x => x.Name).Index(0);
-            Map(x => x.Ean).Index(1);
-            Map(x => x.Photo).Index(3);
+        { 
+            Map(m => m.Images).ConvertUsing(row =>
+         {
+          var result = new List<Image>();
+          var headers = row.Context.HeaderRecord;
+          var rowId = Guid.NewGuid();
+          for (var i = 3; i < headers.Length; i++)
+          {
+              result.Add(
+                  new Image
+                  {
+                      Url = row.GetField(i),
+                      Ean = row.GetField(1),
+                      Name = row.GetField(0),
+                      Id = Guid.NewGuid(),
+                      RowId = rowId
+                  }); 
+          }
+          return result;
+      });
         }
     }
 }
